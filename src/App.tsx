@@ -1,5 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components';
+import { Header, Aside, Main, Footer } from "./components";
 
 const GlobalStyles = createGlobalStyle`
   * {
@@ -14,6 +15,7 @@ const GlobalStyles = createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: rgb(37,37,38);
   }
 `;
 
@@ -21,26 +23,10 @@ const App = () => {
   return (
     <>
       <GlobalStyles />
-      <div className="App">
-        personal manifesto
-
-        {/*
-          Get paid for what you are worth rather than of who you are
-          Produce more than you consume
-          Gain experience rather than wealth
-          There is no failure except in no longer trying
-          Nothing ventured, nothing gained
-          Stick to your values
-          Key aspects should never change
-          Opportunities don't happen. You create them.
-          Learn from your mistakes
-          Work together, play together
-          Offer servers that difference
-          Give honest and timely feedback
-          Failure is not a waste of time
-          People over profits
-        */}
-      </div>
+      <Header />
+      <Aside />
+      <Main />
+      <Footer />
     </>
   );
 }
