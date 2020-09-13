@@ -5,9 +5,9 @@ const Footer = () => {
 	return (
 		<Container>
 			<Side>
-				<Info onClick={() => console.log("clicked")}>
+				{/* <Info onClick={() => console.log("clicked")}>
 					<img src="https://raw.githubusercontent.com/microsoft/vscode-icons/master/icons/dark/info.svg" alt="Infomartion" />
-				</Info>
+				</Info> */}
 				<Content>
 					<Text1><img src="https://raw.githubusercontent.com/microsoft/vscode-icons/master/icons/dark/error.svg" alt="Error" /> 0</Text1>
 					<Text2><img src="https://raw.githubusercontent.com/microsoft/vscode-icons/master/icons/dark/warning.svg" alt="Warning" /> 0</Text2>
