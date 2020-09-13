@@ -43,6 +43,8 @@ const Container = styled.header`
 	align-items: center;
 	justify-content: space-between;
 	color: rgba(255, 255, 255, 0.8);
+	user-select: none;
+	-webkit-user-drag: none;
 `;
 
 const Side = styled.div`
