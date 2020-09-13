@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from "styled-components";
 
 const Header = () => {
+	const [windowState, setWindowState] = useState<"maximize" | "restore">("maximize");
+
+	const onCheck = () => {
+		const element = document.documentElement;
+
+		if (windowState === "maximize") {
+			if (element.requestFullscreen) {
+				element.requestFullscreen();
+				setWindowState("restore");
+			}
+		}
+
+		if (windowState === "restore") {
+			if (document.exitFullscreen) {
+				document.exitFullscreen();
+				setWindowState("maximize");
+			}
+		}
+	}
+
 	return (
 		<Container>
 			<Side>
@@ -20,8 +40,8 @@ const Header = () => {
 
 			<WindowButtons>
 				<button name="minimize"></button>
-				<button name="maximize"></button>
-				<button name="close"></button>
+				<button name={windowState} onClick={() => onCheck()}></button>
+				<button name="close" onClick={() => window.close()}></button>
 			</WindowButtons>
 		</Container>
 	);
@@ -82,8 +102,8 @@ const Item = styled.div`
 
 const WindowButtons = styled.div`
 	height: 100%;
-	width: 64px;
-	padding: 0 8px;
+	width: auto;
+	padding-left: 8px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -93,35 +113,34 @@ const WindowButtons = styled.div`
 		-webkit-appearance: none;
 		cursor: pointer;
 		outline: none;
+		background: none;
 		border: none;
-		width: 12px;
-		height: 12px;
-		border-radius: 12px;
+		height: 100%;
+		width: 46px;
 		margin: 0px;
 		padding: 0px;
-		border: 1px solid rgb(207, 207, 207);
-		background: rgb(219, 219, 219);
-		margin-right: 6px;
+		background-repeat: no-repeat;
+		background-position: center;
 
-		&:last-child {
-			margin-right: 0px;
+		:hover,:active {
+			background-color: rgba(255, 255, 255, 0.1);
 		}
 
 		&[name="close"] {
-			border: 1px solid rgb(229,66,67);
-			background: rgb(255,94,92);
+			background-image: url("https://raw.githubusercontent.com/binaryfunt/electron-seamless-titlebar-tutorial/master/src/icons/close-w-12.png");
+
+			:hover,:active {
+				background-color: rgba(255, 0, 0, 1);
+			}
 		}
 		&[name="maximize"] {
-			border: 1px solid rgb(20,174,21);
-			background: rgb(55,201,64);
+			background-image: url("https://raw.githubusercontent.com/binaryfunt/electron-seamless-titlebar-tutorial/master/src/icons/max-w-12.png");
 		}
 		&[name="minimize"] {
-			border: 1px solid rgb(226,159,64);
-			background: rgb(255,189,77);
+			background-image: url("https://raw.githubusercontent.com/binaryfunt/electron-seamless-titlebar-tutorial/master/src/icons/min-w-12.png");
 		}
-		&[name="popout"] {
-			border: 1px solid rgb(64, 145, 226);
-			background: rgb(92, 173, 255);
+		&[name="restore"] {
+			background-image: url("https://raw.githubusercontent.com/binaryfunt/electron-seamless-titlebar-tutorial/master/src/icons/restore-w-12.png");
 		}
 	}
 `;
