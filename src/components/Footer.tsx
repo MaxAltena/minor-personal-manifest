@@ -117,18 +117,18 @@ const Text = styled.p`
 	-webkit-user-drag: none;
 `;
 
-const Info = styled.div`
-	height: 100%;
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-	padding: 0 5px;
+// const Info = styled.div`
+// 	height: 100%;
+// 	display: flex;
+// 	align-items: center;
+// 	cursor: pointer;
+// 	padding: 0 5px;
 
-	:hover,
-	:active,
-	:focus {
-		background: rgba(255, 255, 255, 0.12);
-	}
+// 	:hover,
+// 	:active,
+// 	:focus {
+// 		background: rgba(255, 255, 255, 0.12);
+// 	}
 
-	margin-right: 5px;
-`;
+// 	margin-right: 5px;
+// `;
