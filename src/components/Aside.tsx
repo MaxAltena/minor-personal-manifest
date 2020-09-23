@@ -15,7 +15,7 @@ const Aside = () => {
 					<img src="https://raw.githubusercontent.com/microsoft/vscode-icons/master/icons/dark/source-control.svg" alt="Source control" />
 				</IconContainer>
 				<IconContainer>
-					<img src="https://raw.githubusercontent.com/microsoft/vscode-icons/master/icons/dark/debug-and-run.svg" alt="Debug" />
+					<img src="https://raw.githubusercontent.com/microsoft/vscode-icons/master/icons/dark/debug-alt.svg" alt="Debug" />
 				</IconContainer>
 				<IconContainer>
 					<img src="https://raw.githubusercontent.com/microsoft/vscode-icons/master/icons/dark/extensions.svg" alt="Extensions" />

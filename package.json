@@ -1,7 +1,11 @@
 {
-  "name": "personal-manifesto",
+  "name": "personal-manifest",
   "version": "1.0.0",
   "homepage": "https://maxaltena.com/manifest.json",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxaltena/minor-personal-manifest.git"
+  },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -38,5 +42,6 @@
     "monaco-editor-webpack-plugin": "^2.0.0",
     "react-app-rewired": "^2.1.6",
     "typescript": "^4.0.3"
-  }
+  },
+  "license": "MIT"
 }

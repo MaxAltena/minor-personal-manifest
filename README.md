@@ -9,6 +9,6 @@
 [![Pull requests](https://img.shields.io/github/issues-pr/MaxAltena/minor-personal-manifesto)](https://github.com/MaxAltena/minor-personal-manifesto/pulls)
 [![Follow @MaxAltena](https://img.shields.io/github/followers/maxaltena?label=Follow&style=social)](https://github.com/MaxAltena)
 
-> The personal manifesto from @MaxAltena for the Minor Digital Experience Design and the subject Critical Design.
+> The personal manifest from @MaxAltena for the Minor Digital Experience Design and the subject Critical Design.
 
 Find it on [https://maxaltena.com/manifest.json/](https://maxaltena.com/manifest.json/)!
