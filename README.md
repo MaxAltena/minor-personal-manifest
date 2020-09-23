@@ -1,4 +1,4 @@
-# Minor - Personal Manifesto
+# Minor - Personal Manifest
 
 [![Deploy](https://github.com/MaxAltena/minor-personal-manifesto/workflows/Deploy/badge.svg)](https://github.com/MaxAltena/minor-personal-manifesto/actions?query=workflow%3A%22Deploy%22)
 [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fmaxaltena.com/manifest.json/)](https://maxaltena.com/manifest.json/)
