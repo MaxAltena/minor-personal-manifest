@@ -1,4 +1,4 @@
-# Minor - Personal Manifest
+# [Minor - Personal Manifest][link:manifest]
 
 ###### [![Netlify status][img:netlify-status]][link:netlify-status] [![Uptime Robot status][img:uptimerobot-status]][link:uptimerobot-status] [![Uptime Robot ratio (30 days)][img:uptimerobot-ratio]][link:uptimerobot-status] [![Snyk Vulnerabilities for GitHub Repo][img:snyk]][link:snyk]
 
